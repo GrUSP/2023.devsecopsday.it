@@ -19,6 +19,10 @@ gold:
     name: "workwave"
     logo_filename: "workwave.svg"
     site_url: "https://www.workwave.com/"
+  sponsor2:
+    name: "workwave"
+    logo_filename: "workwave.svg"
+    site_url: "https://www.workwave.com/"
 silver:
   sponsor0:
     name: "Daruma"
@@ -45,5 +49,4 @@ bronze:
 
 # Partner configuration
 partner_tags:
-  - css
-  - frontend
+  - devsecops

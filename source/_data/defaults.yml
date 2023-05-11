@@ -6,14 +6,14 @@
 # conference config
 conference:
   # Online-only conferences
-  is_online_only: true
+  is_online_only: false
   online_location: "online"
   online_location_title: "Internet"
-  online_location_info: "La conferenza si svolge da remoto"
+  online_location_info: ""
 
   # menu and general params
   menu_buy_tickets_label: "Compra il biglietto"
-  buy_tickets_url: "https://www.eventbrite.com/e/biglietti-devsecopsday-2021-130900796807"
+  buy_tickets_url: "https://devsecopsday-2023.eventbrite.it"
   # additional info for microdata / schema.org
   #md_city: "Verona"
   #md_province: "VR"
@@ -24,12 +24,12 @@ conference:
   contact_email: "devsecopsday@grusp.org"
   # these are for the hero section
   title_pre: ""
-  title: "devsecopsday Digital Edition"
-  city: "online"
-  date: 2021-04-15T10:00+02:00
+  title: "devsecopsday 2023"
+  city: "Bologna"
+  date: 2023-10-13T09:00+02:00
   # Use the next field to override the date in the hero
   hero_date_text:
-  countdown_visible: true
+  countdown_visible: false
   countdown_days: "giorni"
   countdown_hours: "ore"
   countdown_minutes: "minuti"
@@ -51,13 +51,13 @@ conference:
   cfp_readmore_label: "Continua a leggere"
   cfp_open_label: "Proponi un talk entro il"
   cfp_open_title: "Call For Papers aperta!"
-  cfp_deadline: 2021-01-31T23:59+01:00
+  cfp_deadline: 2023-06-25T23:59+02:00
   cfp_register_label: "Invia la tua proposta"
   cfp_register_aria_label: "Inviaci ora la tua proposta"
   # "general information" ("what is it?") component
   geninfo_visible: true
   geninfo_title: "Che cos'è?"
-  geninfo_description: "devsecopsday è la conferenza italiana dedicata ai CSS, uno degli strumenti più potenti, ed allo stesso tempo sottovalutati, del nuovo rinascimento del web.<br>Nata come track del jsday e dallo stesso team di Kerning, devsecopsday vuole dare una dignità alla tecnologia che rende tutti i siti più leggibili, interattivi ed anche belli da vedere.<br> devsecopsday 2021 si svolge online."
+  geninfo_description: "devsecopsday è la prima conferenza italiana dedicata alla pratiche di sicurezza in ambito DevOps - dallo stesso team che organizza <a href='https://incontrodevops.it'>Incontro DevOps</a>e containerday"
   geninfo_about_label: "About"
   geninfo_coc_label: "Codice di condotta"
   geninfo_scholarships_label: "Scholarships"
@@ -69,8 +69,8 @@ conference:
   newsletter_lists:
     php: false
     javascript: false
-    design: true
-    devops: false
+    design: false
+    devops: true
     frontend: true
     ruby: false
     entrepreneurship: false
@@ -97,29 +97,25 @@ conference:
   topics_title: "Argomenti e temi"
   topics_description: "Parleremo di..."
   topics:
-    - "CSS"
-    - "UX"
-    - "Accessibilità"
-    - "Testing"
-    - "Design"
-    - "Metodologie"
+    - "DevOps"
+    - "Sicurezza"
   topics_payoff: "...e molto altro!"
   # "workshop" component. set the first parameter to true to make it appear in home page, false means hidden
-  workshop_visible: true
+  workshop_visible: false
   workshops_title: "workshop"
   workshops_tickets_label: "Acquista i biglietti"
   workshops_readmore_label: "Continua a leggere"
   workshops_register_label: "Registrati"
   # Media section in home page. set the first parameter to true to make it appear in home page, false means hidden
-  media_visible: true
+  media_visible: false
   media_pic_1: ""
   media_pic_2: ""
   media_pic_3: ""
   media_pic_4: ""
   #   playlist: if true, the iframe will be created. if false, it will not
-  media_video_playlist: true
+  media_video_playlist: false
   # if `media_video_is_youtube` is `true`, the relevant playlist will be embedded via "media_video_playlist". If it is `false`, the relevant Vimeo channel will be embedded via "media_vimeo_channel"
-  media_video_is_youtube: true
+  media_video_is_youtube: false
   youtube_base_url: "https://www.youtube.com/embed/videoseries?list="
   # vimeo_base_url: "https://vimeo.com/channels/"
   # vimeo_url_suffix: "/embed"
@@ -128,27 +124,27 @@ conference:
   #   (embed Vimeo showcase: prendere l'ID dello showcase e metterla qui sotto)
   # vimeo_showcase_id: "italiandevsecopsday"
   # Location section in home page. set the first parameter to true to make it appear in home page, false means hidden
-  location_visible: false
-  location_name: "Hotel San Marco"
-  location_address: "Via Longhena 42, 37138 Verona (VE) Italy"
-  location_maps_url: "https://www.google.com/maps/place/Hotel+San+Marco+Fitness+Pool+%26+SPA/@45.4399961,10.9697441,17z/data=!3m1!4b1!4m8!3m7!1s0x4781e1e30a8be6af:0x8091b108e1d130c6!5m2!4m1!1i2!8m2!3d45.4399961!4d10.9719328"
-  location_maps_label: "Get directions"
-  location_readmore_label: "Read more"
+  location_visible: true
+  location_name: "Hotel Savoia Regency"
+  location_address: "Via del Pilastro, 2, 40127 Bologna BO"
+  location_maps_url: "https://goo.gl/maps/KmKU5YsBGjZihnkTA"
+  location_maps_label: "Vai alla mappa"
+  location_readmore_label: "Maggiori dettagli"
   # image credits (l'esempio è per la hero del CSS Day!)
   venue_img_credits: ""
   # Sponsors section in home page. set the first parameter to true to make it appear in home page, false means hidden
   sponsors_visible: true
-  sponsor_title_home: "Sponsor"
+  sponsor_title_home: "Grazie al supporto di"
   # this is for the Community partners section in home page
   community_partners: true
   community_partners_title: "Community partner"
   # community_partners_text: ""
   # this is for the Social links block
   social_follow: "Seguici su"
-  social_fb_url: "https://www.facebook.com/devsecopsday"
-  social_linkedin_url: "https://www.linkedin.com/company/grusp/"
+#  social_fb_url: "https://www.facebook.com/devsecopsday"
+  social_linkedin_url: "https://www.linkedin.com/showcase/devsecopsday/"
   social_twitter_url: "https://twitter.com/devsecopsdayit"
-  social_vimeo_url: "https://vimeo.com/channels/italiandevsecopsday"
+#  social_vimeo_url: "https://vimeo.com/channels/italiandevsecopsday"
   social_youtube_url: "https://www.youtube.com/c/grusp"
   social_instagram_url: "https://www.instagram.com/grusp_/"
   # 404
@@ -156,14 +152,9 @@ conference:
   # footer
   #   this is for the "previous editions" links
   base_url: "devsecopsday.it/"
-  past_editions_pre: "Passate edizioni della conferenza:"
+  past_editions_pre: ""
   past_editions:
-    2015: "2015"
-    2016: "2016"
-    2017: "2017"
-    2018: "2018"
-    2019: "2019"
-    2020: "2020"
+    2023: "2023"
   past_editions_videos_pre: "Tutti i video delle passate edizioni sono disponibili su "
   past_editions_videos_vimeo_label: "Vimeo"
   past_editions_videos_mid: " e "
