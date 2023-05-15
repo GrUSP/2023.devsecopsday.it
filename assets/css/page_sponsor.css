@@ -38,7 +38,7 @@
   margin: 0 0 1em 0; }
 
 .background-light {
-  background-color: #2f4666; }
+  background-color: #6BA6D6; }
   .background-light a {
     color: #000;
     font-weight: 600; }
@@ -88,9 +88,9 @@
       .options-container .triangle {
         border-width: 40px 150px 0 150px; } }
     .options-container .triangle.triangle_description_2 {
-      border-right-color: #6492d5;
-      border-bottom-color: #6492d5;
-      border-left-color: #6492d5; }
+      border-right-color: #5896E0;
+      border-bottom-color: #5896E0;
+      border-left-color: #5896E0; }
     .options-container .triangle.triangle_description_3 {
       border-right-color: rgba(0, 0, 0, 0.4);
       border-bottom-color: rgba(0, 0, 0, 0.4);
@@ -115,7 +115,7 @@
     background-color: #1B365D;
     color: #fff; }
   .options-container .level-block__description_2 {
-    background-color: #6492d5; }
+    background-color: #5896E0; }
   .options-container .level-block__description_3 {
     background-color: rgba(0, 0, 0, 0.4); }
   .options-container .level-block__description_4 {

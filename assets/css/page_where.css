@@ -67,7 +67,7 @@
         line-height: 1.5; } }
 
 .venue-container__more {
-  background-color: #2f4666;
+  background-color: #6BA6D6;
   padding: 2em 0; }
   .venue-container__more h2 {
     font-size: 2.4em;
@@ -139,7 +139,7 @@
     font-weight: 200;
     margin-top: .25em; }
   .container__hotels h4 {
-    color: #2f4666;
+    color: #6BA6D6;
     font-style: normal;
     font-weight: 600;
     text-transform: none; }

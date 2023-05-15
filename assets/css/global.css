@@ -4803,7 +4803,7 @@ header {
 .days, .hours, .minutes, .seconds {
   font-weight: 600;
   font-size: 2em;
-  color: #2f4666; }
+  color: #6BA6D6; }
 
 .days-label, .hours-label, .minutes-label, .seconds-label {
   font-size: .9em;
@@ -4966,9 +4966,9 @@ header {
   .speakers__container a p.subtitle, .speakers__container a p em {
     color: #000; }
   .speakers__container p:hover, .speakers__container a p:active, .speakers__container a p:focus {
-    color: #2f4666; }
+    color: #6BA6D6; }
   .speakers__container a p em:hover, .speakers__container a p em:active, .speakers__container a p em:focus {
-    color: #2f4666; }
+    color: #6BA6D6; }
   .speakers__container a .card-image {
     max-height: 200px;
     overflow: hidden; }
@@ -5324,7 +5324,7 @@ header {
   font-style: normal; }
 
 .community-partners-container .inner {
-  border: 8px solid #2f4666 !important;
+  border: 8px solid #6BA6D6 !important;
   text-align: center;
   flex-flow: wrap; }
   .community-partners-container .inner .columns {
@@ -5533,7 +5533,7 @@ header {
   margin: 0 0 1em 0; }
 
 .background-light {
-  background-color: #2f4666; }
+  background-color: #6BA6D6; }
   .background-light a {
     color: #000;
     font-weight: 600; }
@@ -5583,9 +5583,9 @@ header {
       .options-container .triangle {
         border-width: 40px 150px 0 150px; } }
     .options-container .triangle.triangle_description_2 {
-      border-right-color: #6492d5;
-      border-bottom-color: #6492d5;
-      border-left-color: #6492d5; }
+      border-right-color: #5896E0;
+      border-bottom-color: #5896E0;
+      border-left-color: #5896E0; }
     .options-container .triangle.triangle_description_3 {
       border-right-color: rgba(0, 0, 0, 0.4);
       border-bottom-color: rgba(0, 0, 0, 0.4);
@@ -5610,7 +5610,7 @@ header {
     background-color: #1B365D;
     color: #fff; }
   .options-container .level-block__description_2 {
-    background-color: #6492d5; }
+    background-color: #5896E0; }
   .options-container .level-block__description_3 {
     background-color: rgba(0, 0, 0, 0.4); }
   .options-container .level-block__description_4 {
@@ -5728,7 +5728,7 @@ header {
           min-width: 25%;
           max-width: 25%; } }
       .welcome__container_moreinfo .summary-blocks .block a {
-        color: #2f4666; }
+        color: #6BA6D6; }
       .welcome__container_moreinfo .summary-blocks .block .row-info {
         display: flex;
         flex-direction: row;
@@ -5816,7 +5816,7 @@ header {
         line-height: 1.5; } }
 
 .container__more {
-  background-color: #2f4666; }
+  background-color: #6BA6D6; }
   .container__more h2 {
     font-style: normal;
     text-align: center;
@@ -5841,7 +5841,7 @@ header {
     .container__past-editions .inner a {
       font-weight: 300;
       font-size: 1.5em;
-      color: #6492d5; }
+      color: #5896E0; }
     .container__past-editions .inner a.past-edition {
       display: inline-block;
       margin-right: 8px; }
@@ -5946,7 +5946,7 @@ header {
         line-height: 1.5; } }
 
 .container__short-version {
-  background-color: #2f4666; }
+  background-color: #6BA6D6; }
   .container__short-version h2 {
     font-style: normal;
     text-align: center;
@@ -5972,7 +5972,7 @@ header {
         line-height: 1.5; } }
 
 .info-box {
-  border: 8px solid #2f4666;
+  border: 8px solid #6BA6D6;
   padding: 2em;
   margin-top: 3em; }
 
@@ -6047,7 +6047,7 @@ header {
         line-height: 1.5; } }
 
 .container__short-version {
-  background-color: #2f4666; }
+  background-color: #6BA6D6; }
   .container__short-version h2 {
     font-style: normal;
     text-align: center;
@@ -6189,7 +6189,7 @@ header {
         line-height: 1.5; } }
 
 .venue-container__more {
-  background-color: #2f4666;
+  background-color: #6BA6D6;
   padding: 2em 0; }
   .venue-container__more h2 {
     font-size: 2.4em;
@@ -6261,7 +6261,7 @@ header {
     font-weight: 200;
     margin-top: .25em; }
   .container__hotels h4 {
-    color: #2f4666;
+    color: #6BA6D6;
     font-style: normal;
     font-weight: 600;
     text-transform: none; }
@@ -6339,7 +6339,7 @@ header {
 
 .container__more {
   padding: 2em 0;
-  background-color: #2f4666; }
+  background-color: #6BA6D6; }
   .container__more h3 {
     font-style: normal;
     text-align: center;
@@ -6570,7 +6570,7 @@ header {
   .block-speaker .columns_talk-title {
     display: block; }
   .block-speaker .has-border {
-    border: 8px solid #2f4666;
+    border: 8px solid #6BA6D6;
     background-color: #fff;
     padding: 1em;
     margin-top: 2em;
@@ -8138,7 +8138,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
           font-size: 2em;
           text-transform: uppercase; }
       .workshop-single__container .workshop-single__summary .summary-blocks .block strong {
-        color: #2f4666; }
+        color: #6BA6D6; }
       .workshop-single__container .workshop-single__summary .summary-blocks .block a {
         color: #fff; }
   .workshop-single__container .workshop-single__summary .is-centered {

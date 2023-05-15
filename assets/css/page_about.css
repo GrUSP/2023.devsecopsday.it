@@ -14,7 +14,7 @@
         line-height: 1.5; } }
 
 .container__more {
-  background-color: #2f4666; }
+  background-color: #6BA6D6; }
   .container__more h2 {
     font-style: normal;
     text-align: center;
@@ -39,7 +39,7 @@
     .container__past-editions .inner a {
       font-weight: 300;
       font-size: 1.5em;
-      color: #6492d5; }
+      color: #5896E0; }
     .container__past-editions .inner a.past-edition {
       display: inline-block;
       margin-right: 8px; }
