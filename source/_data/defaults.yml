@@ -60,7 +60,7 @@ conference:
   geninfo_description: "devsecopsday è la prima conferenza italiana dedicata alla pratiche di sicurezza in ambito DevOps - dallo stesso team che organizza <a href='https://incontrodevops.it'>Incontro DevOps</a>e containerday"
   geninfo_about_label: "About"
   geninfo_coc_label: "Codice di condotta"
-  geninfo_scholarships_label: "Scholarships"
+  geninfo_scholarships_label: "Scholarship"
   geninfo_tickets_label: "Biglietti"
   # this is for the Newsletter block
   newsletter_title: "Ricevi gli aggiornamenti"
@@ -99,6 +99,11 @@ conference:
   topics:
     - "DevOps"
     - "Sicurezza"
+    - "development"
+    - "cybersecurity"
+    - "automation"
+    - "Risk management"
+    - "best practice"
   topics_payoff: "...e molto altro!"
   # "workshop" component. set the first parameter to true to make it appear in home page, false means hidden
   workshop_visible: false
