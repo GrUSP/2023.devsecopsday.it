@@ -5,9 +5,11 @@ intro:
   content_1: "Al devsecopsday si parlerà di "
   content_2: "DevOps, sicurezza, cybersecurity, automation, risk management, best pratice e molto altro!"
 more_info:
-  title: "Ulteriori informazioni"
-  description_1: "Lo speaker package include il pass a tutta la stagione di conferenze del GrUSP e l'accesso ai video di tutte le conferenze."
-  description_2: "Le aziende rappresentate da uno speaker che decideranno di sponsorizzare l'evento avranno uno sconto pari ad una sponsorizzazione Bronze a partire dalle sponsorizzazioni Silver in su."
+  title: "Perché proporre un talk?"
+  description_1: "Avrai la possibilità di condividere le tue conoscenze e/o presentare il tuo caso di studio al pubblico. Puoi farti conoscere, costruire la tua rete professionale
+  ed essere parte attiva della conversazione sugli argomenti che ti interessano."
+  description_2: "Se il tuo talk viene selezionato, potrai presentarlo di persona a Bologna. Ti offriremo l'accesso alla conferenza, una cena con team e speaker, e una notte in hotel (o una sponsorizzazione gratuita per la tua azienda).
+  Nel form sottostante trovi tutti i dettagli sul funzionamento della conferenza e le procedure di selezione dei talk."
 contact:
   email_intro: "Per qualsiasi informazione, scrivi a "
   help_intro: "Se hai bisogno di suggerimenti per capire come scrivere un abstract guarda "
