@@ -25,7 +25,11 @@ gold:
     logo_filename: "daruma.svg"
     site_url: "http://www.darumahq.com/"
 silver:
-  sponsor0:
+  sponsor1:
+    name: "Sparkfabrik"
+    logo_filename: "sparkfabrik.png"
+    site_url: "https://www.sparkfabrik.com/it/"
+  sponsor2:
     name: "Workwave"
     logo_filename: "workwave.svg"
     site_url: "http://www.workwave.com/"
