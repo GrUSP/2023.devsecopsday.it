@@ -47,7 +47,7 @@ conference:
   update_link_url: "https://google.com/"
   update_link_label: "link to google, just for the demo"
   # "call for papers" component. set the first parameter to true to make it appear in home page, false means hidden
-  cfp_open: true
+  cfp_open: false
   cfp_readmore_label: "Continua a leggere"
   cfp_open_label: "Proponi un talk entro il"
   cfp_open_title: "Call For Papers aperta!"
@@ -57,7 +57,9 @@ conference:
   # "general information" ("what is it?") component
   geninfo_visible: true
   geninfo_title: "Che cos'è?"
-  geninfo_description: "devsecopsday è la prima conferenza italiana dedicata alla pratiche di sicurezza in ambito DevOps - dallo stesso team che organizza <a href='https://incontrodevops.it'>Incontro DevOps</a>e containerday"
+  geninfo_description: "devsecopsday è la prima conferenza italiana dedicata alla pratiche di sicurezza in ambito DevOps - dallo stesso team che organizza <a href='https://incontrodevops.it'>Incontro DevOps Italia</a> e <a href='https://containerday.it'>containerday.</a>
+  </p><p>devsecopsday si svolge a Bologna, Venerdì 13 Ottobre 2023. Si può partecipare in presenza oppure online.
+  </p><p>Il giorno prima, nella stessa venue, si svolge <a href='https://containerday.it'>la conferenza dedicata alle tecnologie container.</a>"
   geninfo_about_label: "About"
   geninfo_coc_label: "Codice di condotta"
   geninfo_scholarships_label: "Scholarship"
