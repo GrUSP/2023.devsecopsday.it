@@ -16,9 +16,18 @@ sponsors_block_title: ""
 #     site_url: ""
 diamond:
   sponsor1:
+    name: "NTT Data"
+    logo_filename: "nttdata.svg"
+    site_url: "https://it.nttdata.com/"
+  sponsor2:
     name: "Sighup"
     logo_filename: "sighup.svg"
     site_url: "https://sighup.io/"
+platinum:
+  sponsor1:
+    name: "SUSE"
+    logo_filename: "suse.svg"
+    site_url: "https://www.suse.com/"
 gold:
   sponsor1:
     name: "Daruma"
