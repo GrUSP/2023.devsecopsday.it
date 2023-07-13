@@ -1,32 +1,167 @@
 # NB impostare a `true` per generare la pagina, a `false` per NON generarla
-generate_schedule_page: true
+generate_schedule_page: false
 schedule_under_construction_title: "Schedule under construction"
-schedule_under_construction_description: "We are still defining the schedule. Please be patient"
+schedule_under_construction_description: "La scaletta della conferenza sarà disponibile a breve"
 
 # Speakers. I mixin "&nome" servono per indicare quali speaker partecipano a ogni talk, sotto
-speaker_1: &speaker
-  speaker_in_speaker_lists: false
-  speaker_name:
-  speaker_pic_filename: .jpg
-  speaker_role: ""
-  speaker_bio: ""
-  speaker_github_url: ""
-  speaker_twitter_url: ""
-  is_mc: false
+speaker_1: &gianlucavarisco
+  speaker_in_speaker_lists: true
+  speaker_name: Gianluca Varisco
+  speaker_pic_filename: Gianluca-Varisco.png
+  speaker_role: Security Practice Lead, Google Cloud
+  speaker_bio: Gianluca has sixteen years’ background in developing, managing
+    and breaking information systems for high-growth internet companies and
+    software vendors. He is currently working as Security Practice Lead, France
+    for Google Cloud.  Gianluca previously built and led engineering and
+    security teams, briefing executives, shaping the engineering org, finding
+    and fixing systemic problems in and outside of security through people,
+    tools and understanding.  Formerly held engineering roles at Arduino,
+    Digital Transformation Team (Italian Government), Rocket Internet, Red Hat,
+    Lastminute.com Group.
+  speaker_twitter_url: https://twitter.com/gvarisco
+  speaker_github: ""
+  speaker_linkedin_url: https://www.linkedin.com/in/gvarisco/
+speaker_2: &davideimola
+  speaker_in_speaker_lists: true
+  speaker_name: Davide Imola
+  speaker_pic_filename: Davide-Imola.png
+  speaker_role: DevOps Engineer @ RedCarbon & Community Manager @ Schrödinger Hat
+  speaker_bio: Davide è nato nel 1995. Ha iniziato a sviluppare i primi siti in
+    HTML a 12 anni, quando ha chiesto di ricevere il suo primo personal computer
+    come regalo per la prima comunione. Attualmente è DevOps Engineer presso
+    RedCarbon. Appassionato di Node.js, Golang, Cloud-Native e Kubernetes, è uno
+    dei co-organizzatori di Schrodinger Hat, community basata sull'Open Source.
+  speaker_twitter_url: https://twitter.com/DavideImola
+  speaker_github_url: https://github.com/davideimola
+  speaker_linkedin_url: https://www.linkedin.com/in/davideimola/
+speaker_3: &giovannigalloro
+  speaker_in_speaker_lists: true
+  speaker_name: Giovanni Galloro
+  speaker_pic_filename: Giovanni-Galloro.png
+  speaker_role: Customer Engineer @ Google
+  speaker_bio: "Giovanni Galloro lavora in Google dal 2017 come Customer
+    Engineer specializzato su Kubernetes, strumenti devops e application
+    networking. Lavora con diverse organizzazioni in tutta l'area EMEA
+    aiutandole ad utilizzare queste tecnologie ed a migliorare le loro pratiche
+    di software delivery. Giovanni è un Community Ambassador per la Continuous
+    Delivery Foundation ed è spesso uno speaker a conferenze per sviluppatori e
+    tecnical practitioners."
+  speaker_twitter_url: https://twitter.com/ggalloro
+  speaker_github_url: https://github.com/ggalloro
+  speaker_linkedin_url: https://www.linkedin.com/in/galloro/
+speaker_4: &giovannamonti
+  speaker_in_speaker_lists: true
+  speaker_name: Giovanna Monti
+  speaker_pic_filename: Giovanna-Monti.png
+  speaker_role: Full Stack Developer @ Mia-Platform
+  speaker_bio: Classe 1998, Giovanna è una giovane sviluppatrice software; vive
+    a Milano, dove ha studiato Informatica per la Comunicazione Digitale e ha
+    poi deciso di specializzarsi nel campo dello sviluppo web.  Ha iniziato a
+    lavorare come developer presso Accurat, uno studio di design e sviluppo di
+    applicazioni data-driven, e attualmente è una sviluppatrice Full Stack
+    presso Mia-Platform, un'azienda IT all'avanguardia che fornisce una
+    piattaforma cloud per lo sviluppo e la gestione di prodotti e servizi
+    digitali.  Con una curiosità insaziabile, Giovanna adora affrontare nuove
+    sfide ed ampliare costantemente le sue conoscenze, appassionandosi
+    rapidamente ai nuovi argomenti che incontra.  Il suo motto? Comprendere le
+    cose, prima di farle. E, nel dubbio, non avere paura di chiedere per la
+    milionesima volta!
+  speaker_twitter: ""
+  speaker_github_url: https://github.com/GiovannaMonti
+  speaker_linkedin_url: https://www.linkedin.com/in/giovanna-monti-0637351a4/
+speaker_5: &andreapanisson
+  speaker_in_speaker_lists: true
+  speaker_name: Andrea Panisson
+  speaker_pic_filename: Andrea-Panisson.png
+  speaker_role: Cloud Native Engineer
+  speaker_bio: Frequento il web dai suoi albori nel lontano 1994, ai tempi di
+    NCSA Mosaic e delle BBS. Dopo diversi anni come sviluppatore web, mi sono
+    spostato verso la parte di operations ed infrastrutture, approfondendo e
+    sposando paradigmi quali DevOps e GitOps (di cui sono un fervente
+    appassionato nonché divulgatore) ed investigando tutto quello che ruota
+    attorno al mondo Cloud Native.  Oggi mi occupo di container su Kubernetes,
+    di Infrastructure as Code, di architetture Cloud, aiuto gli altri ad
+    approcciarsi al Cloud Native e, ovviamente, di GitOps.
+  speaker_twitter: ""
+  speaker_github: ""
+  speaker_linkedin_url: https://www.linkedin.com/in/andreapanisson/
+speaker_6: &lucabandini
+  speaker_in_speaker_lists: true
+  speaker_name: Luca Bandini
+  speaker_pic_filename: Luca-Bandini.png
+  speaker_role: DevSecOps Engineer @ SIGHUP
+  speaker_bio: Luca Bandini lavora come DevSecOps Engineer in SIGHUP,
+    concentrandosi su aspetti di sicurezza di infrastrutture containerizzate e
+    cloud. È sempre stato appassionato di programmazione, ma si è innamorato
+    dell'ecosistema Cloud Native non molto tempo fa. Quando non lavora, si
+    sporca le mani in progetti DIY o arrampicandosi su rocce.
+  speaker_twitter: ""
+  speaker_github_url: https://github.com/Vombato
+  speaker_linkedin_url: https://www.linkedin.com/in/lucabandini/
+speaker_7: &giorgiarondinini
+  speaker_in_speaker_lists: true
+  speaker_name: Giorgia Rondinini
+  speaker_pic_filename: Giorgia-Rondinini.png
+  speaker_role: Platform Engineer @ Imola Informatica
+  speaker_bio: Appassionata di Software Architecture, DevOps e Platform
+    Engineering, ma sono sempre in cerca di tempo e opportunità per imparare
+    qualcosa di nuovo. I miei interessi spaziano dal cloud alla programmazione
+    funzionale, passando per la montagna e il lavoro a maglia.
+  speaker_twitter: ""
+  speaker_github: ""
+  speaker_linkedin: ""
+speaker_8: &giuliotodini
+  speaker_in_speaker_lists: true
+  speaker_name: Giulio Todini
+  speaker_pic_filename: Giulio-Todini.png
+  speaker_role: Presale Engineer @ SUSE
+  speaker_bio: SUSE Pre-Sales engineer, con più di 10 anni di esperienza in
+    sviluppo di prodotti software e supporto operativo. Professionista con un
+    forte background scientifico e una vasta esperienza internazionale nella
+    fornitura di progetti operativi tempestivi, accurati e mission-critical.
+  speaker_twitter: ""
+  speaker_github: ""
+  speaker_linkedin_url: https://www.linkedin.com/in/giulio-todini-458886a/
+speaker_9: &matteorenzi
+  speaker_in_speaker_lists: true
+  speaker_name: Matteo Renzi
+  speaker_pic_filename: Matteo-Renzi.png
+  speaker_role: System Integration Engineer @ Dedalus Italia Spa
+  speaker_bio: Ho iniziato la mia carriera professionale nell'IT dal settore
+    bancario, per il quale ho lavorato come sviluppatore per circa 11 anni. Sono
+    quindi passato al settore IT ambito sanitario, nel quale ho lavorato per i
+    primi 3 anni occupandomi di delivery ed integrazioni. La necessità di
+    migrare verso un prodotto concepito per essere eseguiti su containers -
+    orchestrati da un cluster kubernetes - mi ha dato la spinta e motivazione
+    per specializzarmi su tecnologie cloud-native, con particolare interesse
+    sull'ambito observability e sicurezza.
+  speaker_twitter_url: https://twitter.com/rmatteo
+  speaker_github: ""
+  speaker_linkedin_url: https://www.linkedin.com/in/matteo-renzi/
+speaker_10: &edoardodusi
+  speaker_in_speaker_lists: true
+  speaker_name: Edoardo Dusi
+  speaker_pic_filename: Edoardo-Dusi.png
+  speaker_role: MASTER OF CEREMONY - Developer Relations Engineer @ SparkFabrik
+  is_mc: true
 
 speakers:
-  speaker_1: *speaker
+  speaker_1: *lucabandini
+  speaker_2: *giovannigalloro
+  speaker_3: *davideimola
+  speaker_4: *giovannamonti
+  speaker_5: *andreapanisson
+  speaker_6: *matteorenzi
+  speaker_7: *giorgiarondinini
+  speaker_8: *giuliotodini
+  speaker_9: *gianlucavarisco
+  speaker_10: *edoardodusi
 
 tracks:
   track_1: &track_1
     id: 1
     title: "Track 1"
-  track_2: &track_2
-    id: 2
-    title: "Track 2"
-  track_3: &track_3
-    id: 3
-    title: "Track 3 - fake track"
+
 
 # NB "item_type": tipi di "talk"
 #   "talk" -- un talk vero e proprio, che va anche in components/speakers e nella pagina talks_speakers
@@ -60,23 +195,218 @@ days:
         service_icon: "glass"
 
       # talk
-      keynote:
-        item_type: "keynote"
+      dallo-sviluppo-al-rilascio:-proteggere-la-software-supply-chain-"the-cloud-native-way"-6:
+        item_type: talk
         track: *track_1
-        start_datetime: 2022-05-19T09:30+02:00
-        end_datetime: 2022-05-19T10:25+02:00
-        talk_title: ""
-        talk_description: ""
-        talk_video_url:
+        talk_title: 'Dallo sviluppo al rilascio: Proteggere la software supply chain "The
+          Cloud Native Way"'
+        talk_description: Con l'aumento della complessità delle software supply chain, è
+          fondamentale avere un modello in grado di gestire i rischi associati. In
+          questo talk, si partirà dalla definizione di una supply chain, elencando i
+          possibili vettori di compromissione e si forniranno possibili soluzioni e
+          framework da poter adottare. Utilizzeremo come esempio il framework del
+          CNCF Security Technical Advisory Group, in quanto un approccio globale
+          alla sicurezza della software supply chain. Ne esamineremo da vicino i
+          vari componenti, partendo dalla fase di sviluppo del codice fino a quella
+          di rilascio. Esploreremo come possa essere utilizzato per gestire i rischi
+          e forniremo indicazioni su come implementarlo all'interno di una
+          organizzazione. Sia che tu sia uno sviluppatore, un security expert o un
+          manager nella tua azienda, ti forniremo gli strumenti necessari per
+          effettuare i primi passi verso la protezione della tua software supply
+          chain.
+        talk_video_url: ""
+        start_datetime: ""
+        end_datetime: ""
         speakers:
-          speaker_1: *speaker
-      titolotalk1:
-        item_type: "talk"
+          speaker_1: *lucabandini
+      protect-your-software-supply-chain-with-tekton-and-sigstore-3:
+        item_type: talk
         track: *track_1
-        start_datetime: 2022-05-19T10:25+02:00
-        end_datetime: 2022-05-19T11:05+02:00
-        talk_title: ""
-        talk_description: ""
-        talk_video_url:
+        talk_title: Protect your software supply chain with Tekton and Sigstore
+        talk_description: In questo talk vedrai esempi pratici di come proteggere la tua catena di
+          produzione del software attraverso strumenti open source come Tekton e
+          Sigstore e l’adozione delle specifiche SLSA (Supply-chain Levels for
+          Software Artifacts) della Open Source Security Foundation.  Imparerai come
+          certificare il software  in modo conforme alle suddette specifiche
+          utilizzando Tekton Chains, esplorerai diversi metodi di firma digitale,
+          tra cui il keyless signing di Sigstore Fulcio, e come usare il
+          transparency log di Sigstore Rekor. Infine vedrai come verificare la
+          conformità del software in fase di deployment.
+        talk_video_url: ""
+        start_datetime: ""
+        end_datetime: ""
         speakers:
-          speaker_1: *speaker
+          speaker_1: *giovannigalloro
+      securing-secrets-in-the-gitops-era-2:
+        item_type: talk
+        track: *track_1
+        talk_title: Securing secrets in the GitOps era
+        talk_description: "Il GitOps sta diventando sempre più popolare soprattutto quando si
+          comincia a parlare di Kubernetes. Ovviamente con l'avvento di nuove
+          tecnologie e best practice, nascono anche nuovi dubbi, tipo: Come posso
+          gestire i miei secret avendo a che fare con il GitOps?"
+        talk_video_url: ""
+        start_datetime: ""
+        end_datetime: ""
+        speakers:
+          speaker_1: *davideimola
+      service-account:-da-grandi-poteri-derivano-grandi-responsabilita-4:
+        item_type: talk
+        track: *track_1
+        talk_title: "Service Account: da grandi poteri derivano grandi responsabilità"
+        talk_description: "Hai appena scoperto dell'esistenza dei service account, e come Peter
+          Parker quando scopre di poter sparare ragnatele dalle mani, anche tu non
+          vedi l’ora di mettere alla prova il tuo nuovo superpotere.  Ma cos’è di
+          preciso un service account? Come può essere efficacemente integrato in un
+          prodotto e in ambiente cloud? E se fosse potenzialmente pericoloso?
+          Durante lo sviluppo di una funzionalità inedita per la gestione dei
+          service account per il prodotto della mia azienda, mi sono confrontata con
+          questi e altri interrogativi.  Aspetti come la gestione dei permessi da
+          assegnare, l'impostazione della scadenza e delle notifiche di scadenza dei
+          service account, così come l'amministrazione del rinnovo delle loro
+          credenziali, sono argomenti che non possono essere sottovalutati.  Trovare
+          risposte adeguate a queste domande è diventato fondamentale specialmente
+          quando mi è stato chiesto di documentare questa nuova funzionalità, con
+          l'obiettivo di metterne in risalto non solo le opportunità, ma soprattutto
+          i potenziali rischi.  In questa presentazione, vi guiderò attraverso la
+          mia esperienza personale con i service account e la creazione di
+          funzionalità per la loro gestione, mettendo in evidenza le enormi
+          possibilità ma anche i pericoli che un approccio non sicuro può
+          comportare.  Unitevi a me in questo viaggio: insieme, acquisiremo le
+          competenze e gli strumenti necessari per navigare in questo scenario con
+          (un po') più di sicurezza."
+        talk_video_url: ""
+        start_datetime: ""
+        end_datetime: ""
+        speakers:
+          speaker_1: *giovannamonti
+      come-implementare-il-proprio-modello-di-governance-devsecops-automatizzato-con-rego-e-trivy-5:
+        item_type: talk
+        track: *track_1
+        talk_title: Come implementare il proprio modello di governance DevSecOps automatizzato
+          con Rego e Trivy
+        talk_description: Oggi si parla molto di DevSecOps ed esistono diversi strumenti che
+          consentono di aggiungere alle nostre pipeline controlli automatici alla
+          ricerca di vulnerabilità note nelle dipendenze del nostro software
+          (librerie), nelle immagini dei container (dipendenze del sistema
+          operativo), ma anche nelle configurazioni della nostra infrastruttura o
+          del nostro cluster Kubernetes. Per la parte software gli strumenti si
+          appoggiano a degli archivi pubblici che raccolgono le CVE (Common
+          Vulnerabilities and Exposures) note, per la parte di infrastruttura e
+          configurazione sfruttano l'insieme di buone pratiche messe a punto da
+          organizzazioni quali CIS (Center for Internet Security) o NSA (National
+          Security Agency). Si tratta comunque di regole predefinite, che se da un
+          lato ci consentono di controllare vulnerabilità o errori di configurazione
+          che possono affliggere il nostro software o la nostra infrastruttura,
+          dall'altro poco hanno a che fare con quelle che possono essere le
+          necessità specifiche di un progetto o di un dato team o azienda.  Ad
+          esempio, se delle policy aziendali imponessero che tutti gli elementi di
+          infrastruttura (Object storage, Virtual Machine etc…) debbano essere
+          creati solo in determinate regioni? oppure che tutte le risorse Kubernetes
+          debbano avere delle label specifiche o debbano essere create in un dato
+          namespace? come possiamo fare l'enforcing di queste regole in modo
+          totalmente automatico?   In questo talk vi mostrerò come sia possibile
+          automatizzare questo genere di controlli scrivendo delle regole in Rego,
+          il linguaggio nativo utilizzato dal progetto Open Policy Agent (OPA) e
+          utilizzando uno noto security scanner Open Source chiamato Trivy.
+        talk_video_url: ""
+        start_datetime: ""
+        end_datetime: ""
+        speakers:
+          speaker_1: *andreapanisson
+      kubernetes-proactive-threat-detection-with-falco-and-prometheus-9:
+        item_type: talk
+        track: *track_1
+        talk_title: Kubernetes proactive threat detection with Falco and Prometheus
+        talk_description: "Rilevare prontamente minacce alla sicurezza rivolte al cluster ed alla
+          piattaforma ospitante è di cruciale importanza, poiché permette di
+          intervenire sfruttando un elemento chiave: Il tempo. Durante il talk
+          vedremo come poter utilizzare due tool dell'ecosistema CNCF per tale
+          scopo. Il primo, Prometheus, largamente conosciuto, ci permetterà anche di
+          inviare notifiche push agli amministratori del cluster. Il secondo, Falco,
+          sarà il nostro occhio che vigilerà sui tentativi di intrusione. Inizieremo
+          descrivendo le loro caratteristiche e potenzialità, per poi passare ad una
+          implementazione, mostrando come sono integrati tra loro e come possono
+          avvisare gli admin in modo proattivo. Al termine della sessione avrete
+          tutti gli spunti necessari per iniziare con la vostra implementazione."
+        talk_video_url: ""
+        start_datetime: ""
+        end_datetime: ""
+        speakers:
+          speaker_1: *matteorenzi
+      spreading-sec-across-devops-loops-7:
+        item_type: talk
+        track: *track_1
+        talk_title: Spreading Sec across DevOps loops
+        talk_description: "Container, Platform Engineering, Internal Developer Platform sono i nuovi
+          \"Game Changer\" del DevOps: oltre a permettere un miglioramento della
+          velocità di onboarding di nuovi Team portano anche a un miglioramento
+          della stabilità e standardizzazione dei processi e delle risorse, con
+          conseguenze positive sulla sicurezza dei sistemi. Tuttavia, ancora oggi
+          alcune problematiche già note in passato rimangono irrisolte: la distanza
+          tra l'ambiente di sviluppo locale e l'ambiente di integrazione remoto è
+          tutt'ora un problema ricorrente. Controlli su codice, test di integrazione
+          e analisi delle vulnerabilità, ad esempio, sono attività sempre più
+          presenti nelle pipeline di integrazione, spesso però tralasciate durante
+          lo sviluppo locale. Avvicinare questi controlli e test allo sviluppatore
+          non solo riduce i tempi per ricevere feedback, con conseguenze positive
+          sui tempi di sviluppo, ma aiuta anche ad aumentare la consapevolezza degli
+          sviluppatori in merito agli aspetti critici del proprio software. Una
+          maggiore consapevolezza in questo ambito può portare a processi di
+          sviluppo più sicuri, efficienti ed efficaci. Affidare agli sviluppatori la
+          responsabilità di definire e gestire controlli di sicurezza e qualità
+          porta a un aumento del loro carico cognitivo, senza garantire un effettivo
+          miglioramento del ciclo DevOps: in questo talk vedremo come e con che
+          strumenti sia possibile fornire agli sviluppatori un modo per anticipare i
+          controlli di sicurezza, ridurre pratiche di sviluppo rischiose e aumentare
+          la consapevolezza sulla sicurezza del proprio codice."
+        talk_video_url: ""
+        start_datetime: ""
+        end_datetime: ""
+        speakers:
+          speaker_1: *giorgiarondinini
+      shift-left-e-security-as-code:-sicurezza-su-kubernetes-con-neuvector-8:
+        item_type: talk
+        track: *track_1
+        talk_title: "Shift Left e Security-as-Code: Sicurezza su Kubernetes con Neuvector"
+        talk_description: Nell’era del DevSecOps e delle tecnologie cloud-native, il paradigma
+          “shift-left” è emerso come un approccio vincente per le strategie di
+          cybersecurity. Questo “shift” enfatizza l’integrazione precoce delle
+          policies di sicurezza nel ciclo di sviluppo di una applicazione erogata su
+          Kubernetes. Centrale per questo approccio è la metodologia
+          Security-as-Code, che prevede l’applicazione di policies di sicurezza in
+          modo dichiarativo. Con questa metodologia le policies di sicurezza
+          diventano parte di una applicazione, così come qualsiasi altra risorsa
+          Kubernetes (deployment, services, …). Questo approccio consente ai team di
+          sviluppo di perfezionare le policies di sicurezza in ambienti meno critici
+          e applicare policies rigorose in produzione, minimizzando i rischi di
+          cybersecurity e assicurando una difesa robusta e scalabile per le
+          applicazioni containerizzate. Per illustrare il valore di queste
+          metodologie mostreremo una demo illustrando in che modo NeuVector e le sue
+          potenzialità possono rendere possibile un approccio solido alle tematiche
+          illustrate.
+        talk_video_url: ""
+        start_datetime: ""
+        end_datetime: ""
+        speakers:
+          speaker_1: *giuliotodini
+      supply-chain-attacks-and-the-future-of-software-delivery-1:
+        item_type: talk
+        track: *track_1
+        talk_title: Supply Chain Attacks and the future of Software Delivery
+        talk_description: "Gli attacchi alla supply chain sono in aumento e lo stesso ciclo di vita
+          dello sviluppo del software (SDLC) è diventato un vettore di attacchi. I
+          recenti attacchi a Log4J, SolarWinds, Kaseya e Codecov hanno evidenziato
+          le aree vulnerabili esposte nel SDLC.  In questo intervento discuteremo
+          della crescente minaccia di attacchi alla supply chain, di come le
+          organizzazioni possono adottare misure per proteggersi e una panoramica
+          sul futuro. Verranno trattati argomenti quali:  - Condurre valutazioni
+          periodiche della sicurezza dei fornitori di terze parti - Implementazione
+          di solidi controlli di sicurezza per lo sviluppo e la distribuzione del
+          software - Investire in strumenti e tecnologie che aiutino a identificare
+          e mitigare i rischi della catena di fornitura."
+        talk_video_url: ""
+        start_datetime: ""
+        end_datetime: ""
+        speakers:
+          speaker_1: *gianlucavarisco
