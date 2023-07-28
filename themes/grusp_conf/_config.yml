@@ -7,16 +7,16 @@ language: "en"
 menu:
   welcome: welcome
   talks_speakers: talk e speaker
+  schedule: programma
   sponsor: sponsor
   # scommentare per generare pagina
-  # schedule: programma
   # menu item for workshop
   # workshop: workshop
 
 # workshops submenu (comment out if only one workshop: add items for multiple workshops)
-workshop_submenu:
-  workshop_1: rails and vue
-  workshop_2: sample second workshop
+# workshop_submenu:
+#   workshop_1: rails and vue
+#   workshop_2: sample second workshop
 
 # welcome submenu
 welcome_submenu:

@@ -1,5 +1,5 @@
 # NB impostare a `true` per generare la pagina, a `false` per NON generarla
-generate_schedule_page: false
+generate_schedule_page: true
 schedule_under_construction_title: "Schedule under construction"
 schedule_under_construction_description: "La scaletta della conferenza sarà disponibile a breve"
 
@@ -173,28 +173,64 @@ tracks:
 
 days:
   day_1:
-    date: 2020-09-16T09:00
+    date: 2023-10-13T09:00
     title: "Day 1"
     talks:
-      talk_1:
+      checkin:
         item_type: "service"
-        start_datetime: 2020-09-16T09:00
-        end_datetime: 2020-09-16T09:30
+        start_datetime: 2023-10-13T08:45+02:00
+        end_datetime: 2023-10-13T09:30+02:00
         talk_title: "Check-in"
-      talk_2:
+      opening:
         item_type: "service"
-        start_datetime: 2022-05-19T13:00+02:00
-        end_datetime: 2022-05-19T14:30+02:00
-        talk_title: "Lunch break"
+        start_datetime: 2023-10-13T09:30+02:00
+        end_datetime: 2023-10-13T09:45+02:00
+        talk_title: "Intro by GrUSP"
+      coffee-morning:
+        item_type: "service"
+        start_datetime: 2023-10-13T10:55+02:00
+        end_datetime: 2023-10-13T11:25+02:00
+        talk_title: "Pausa Caffé"
+        service_icon: "coffee"
+      lunch:
+        item_type: "service"
+        start_datetime: 2023-10-13T13:10+02:00
+        end_datetime: 2023-10-13T14:40+02:00
+        talk_title: "Pausa pranzo"
         service_icon: "cutlery"
-      happy-hour:
+      coffee-afternoon:
         item_type: "service"
-        start_datetime: 2022-05-19T18:25+02:00
-        end_datetime: 2022-05-19T19:30+02:00
-        talk_title: "Happy Hour"
-        service_icon: "glass"
+        start_datetime: 2023-10-13T15:50+02:00
+        end_datetime: 2023-10-13T16:20+02:00
+        talk_title: "Pausa Caffé"
+        service_icon: "coffee"
+      closing:
+        item_type: "service"
+        start_datetime: 2023-10-13T17:30+02:00
+        end_datetime: 2023-10-13T17:40+02:00
+        talk_title: "Saluti da GrUSP"
 
       # talk
+      supply-chain-attacks-and-the-future-of-software-delivery-1:
+        item_type: talk
+        track: *track_1
+        talk_title: Supply Chain Attacks and the future of Software Delivery
+        talk_description: "Gli attacchi alla supply chain sono in aumento e lo stesso ciclo di vita
+          dello sviluppo del software (SDLC) è diventato un vettore di attacchi. I
+          recenti attacchi a Log4J, SolarWinds, Kaseya e Codecov hanno evidenziato
+          le aree vulnerabili esposte nel SDLC.  In questo intervento discuteremo
+          della crescente minaccia di attacchi alla supply chain, di come le
+          organizzazioni possono adottare misure per proteggersi e una panoramica
+          sul futuro. Verranno trattati argomenti quali:  - Condurre valutazioni
+          periodiche della sicurezza dei fornitori di terze parti - Implementazione
+          di solidi controlli di sicurezza per lo sviluppo e la distribuzione del
+          software - Investire in strumenti e tecnologie che aiutino a identificare
+          e mitigare i rischi della catena di fornitura."
+        talk_video_url: ""
+        start_datetime: 2023-10-13T09:45+02:00
+        end_datetime: 2023-10-13T10:20+02:00
+        speakers:
+          speaker_1: *gianlucavarisco
       dallo-sviluppo-al-rilascio:-proteggere-la-software-supply-chain-"the-cloud-native-way"-6:
         item_type: talk
         track: *track_1
@@ -210,13 +246,13 @@ days:
           vari componenti, partendo dalla fase di sviluppo del codice fino a quella
           di rilascio. Esploreremo come possa essere utilizzato per gestire i rischi
           e forniremo indicazioni su come implementarlo all'interno di una
-          organizzazione. Sia che tu sia uno sviluppatore, un security expert o un
+          organizzazione. Sia che tu sia developer, security expert o
           manager nella tua azienda, ti forniremo gli strumenti necessari per
           effettuare i primi passi verso la protezione della tua software supply
           chain.
         talk_video_url: ""
-        start_datetime: ""
-        end_datetime: ""
+        start_datetime: 2023-10-13T10:20+02:00
+        end_datetime: 2023-10-13T10:55+02:00
         speakers:
           speaker_1: *lucabandini
       protect-your-software-supply-chain-with-tekton-and-sigstore-3:
@@ -226,30 +262,42 @@ days:
         talk_description: In questo talk vedrai esempi pratici di come proteggere la tua catena di
           produzione del software attraverso strumenti open source come Tekton e
           Sigstore e l’adozione delle specifiche SLSA (Supply-chain Levels for
-          Software Artifacts) della Open Source Security Foundation.  Imparerai come
+          Software Artifacts) della Open Source Security Foundation. Imparerai come
           certificare il software  in modo conforme alle suddette specifiche
           utilizzando Tekton Chains, esplorerai diversi metodi di firma digitale,
           tra cui il keyless signing di Sigstore Fulcio, e come usare il
           transparency log di Sigstore Rekor. Infine vedrai come verificare la
           conformità del software in fase di deployment.
         talk_video_url: ""
-        start_datetime: ""
-        end_datetime: ""
+        start_datetime: 2023-10-13T11:25+02:00
+        end_datetime: 2023-10-13T12:00+02:00
         speakers:
           speaker_1: *giovannigalloro
-      securing-secrets-in-the-gitops-era-2:
+      shift-left-e-security-as-code:-sicurezza-su-kubernetes-con-neuvector-8:
         item_type: talk
         track: *track_1
-        talk_title: Securing secrets in the GitOps era
-        talk_description: "Il GitOps sta diventando sempre più popolare soprattutto quando si
-          comincia a parlare di Kubernetes. Ovviamente con l'avvento di nuove
-          tecnologie e best practice, nascono anche nuovi dubbi, tipo: Come posso
-          gestire i miei secret avendo a che fare con il GitOps?"
+        talk_title: "Shift Left e Security-as-Code: Sicurezza su Kubernetes con Neuvector"
+        talk_description: Nell’era del DevSecOps e delle tecnologie cloud-native, il paradigma
+          “shift-left” è emerso come un approccio vincente per le strategie di
+          cybersecurity. Questo “shift” enfatizza l’integrazione precoce delle
+          policies di sicurezza nel ciclo di sviluppo di una applicazione erogata su
+          Kubernetes. Centrale per questo approccio è la metodologia
+          Security-as-Code, che prevede l’applicazione di policies di sicurezza in
+          modo dichiarativo. Con questa metodologia le policies di sicurezza
+          diventano parte di una applicazione, così come qualsiasi altra risorsa
+          Kubernetes (deployment, services, …). Questo approccio consente ai team di
+          sviluppo di perfezionare le policies di sicurezza in ambienti meno critici
+          e applicare policies rigorose in produzione, minimizzando i rischi di
+          cybersecurity e assicurando una difesa robusta e scalabile per le
+          applicazioni containerizzate. Per illustrare il valore di queste
+          metodologie mostreremo una demo illustrando in che modo NeuVector e le sue
+          potenzialità possono rendere possibile un approccio solido alle tematiche
+          illustrate.
         talk_video_url: ""
-        start_datetime: ""
-        end_datetime: ""
+        start_datetime: 2023-10-13T12:00+02:00
+        end_datetime: 2023-10-13T12:35+02:00
         speakers:
-          speaker_1: *davideimola
+          speaker_1: *giuliotodini
       service-account:-da-grandi-poteri-derivano-grandi-responsabilita-4:
         item_type: talk
         track: *track_1
@@ -276,10 +324,54 @@ days:
           competenze e gli strumenti necessari per navigare in questo scenario con
           (un po') più di sicurezza."
         talk_video_url: ""
-        start_datetime: ""
-        end_datetime: ""
+        start_datetime: 2023-10-13T12:35+02:00
+        end_datetime: 2023-10-13T13:10+02:00
         speakers:
           speaker_1: *giovannamonti
+      spreading-sec-across-devops-loops-7:
+        item_type: talk
+        track: *track_1
+        talk_title: Spreading Sec across DevOps loops
+        talk_description: "Container, Platform Engineering, Internal Developer Platform sono i nuovi
+          \"Game Changer\" del DevOps: oltre a permettere un miglioramento della
+          velocità di onboarding di nuovi Team portano anche a un miglioramento
+          della stabilità e standardizzazione dei processi e delle risorse, con
+          conseguenze positive sulla sicurezza dei sistemi. Tuttavia, ancora oggi
+          alcune problematiche già note in passato rimangono irrisolte: la distanza
+          tra l'ambiente di sviluppo locale e l'ambiente di integrazione remoto è
+          tutt'ora un problema ricorrente. Controlli su codice, test di integrazione
+          e analisi delle vulnerabilità, ad esempio, sono attività sempre più
+          presenti nelle pipeline di integrazione, spesso però tralasciate durante
+          lo sviluppo locale. Avvicinare questi controlli e test allo sviluppatore
+          non solo riduce i tempi per ricevere feedback, con conseguenze positive
+          sui tempi di sviluppo, ma aiuta anche ad aumentare la consapevolezza di chi sviluppa
+          in merito agli aspetti critici del proprio software. Una
+          maggiore consapevolezza in questo ambito può portare a processi di
+          sviluppo più sicuri, efficienti ed efficaci. Affidare a chi sviluppa la
+          responsabilità di definire e gestire controlli di sicurezza e qualità
+          porta a un aumento del loro carico cognitivo, senza garantire un effettivo
+          miglioramento del ciclo DevOps: in questo talk vedremo come e con che
+          strumenti sia possibile fornire loro un modo per anticipare i
+          controlli di sicurezza, ridurre pratiche di sviluppo rischiose e aumentare
+          la consapevolezza sulla sicurezza del proprio codice."
+        talk_video_url: ""
+        start_datetime: 2023-10-13T14:40+02:00
+        end_datetime: 2023-10-13T15:15+02:00
+        speakers:
+          speaker_1: *giorgiarondinini
+      securing-secrets-in-the-gitops-era-2:
+        item_type: talk
+        track: *track_1
+        talk_title: Securing secrets in the GitOps era
+        talk_description: "Il GitOps sta diventando sempre più popolare soprattutto quando si
+          comincia a parlare di Kubernetes. Ovviamente con l'avvento di nuove
+          tecnologie e best practice, nascono anche nuovi dubbi, tipo: Come posso
+          gestire i miei secret avendo a che fare con il GitOps?"
+        talk_video_url: ""
+        start_datetime: 2023-10-13T15:15+02:00
+        end_datetime: 2023-10-13T15:50+02:00
+        speakers:
+          speaker_1: *davideimola
       come-implementare-il-proprio-modello-di-governance-devsecops-automatizzato-con-rego-e-trivy-5:
         item_type: talk
         track: *track_1
@@ -305,13 +397,13 @@ days:
           creati solo in determinate regioni? oppure che tutte le risorse Kubernetes
           debbano avere delle label specifiche o debbano essere create in un dato
           namespace? come possiamo fare l'enforcing di queste regole in modo
-          totalmente automatico?   In questo talk vi mostrerò come sia possibile
+          totalmente automatico? In questo talk vi mostrerò come sia possibile
           automatizzare questo genere di controlli scrivendo delle regole in Rego,
           il linguaggio nativo utilizzato dal progetto Open Policy Agent (OPA) e
           utilizzando uno noto security scanner Open Source chiamato Trivy.
         talk_video_url: ""
-        start_datetime: ""
-        end_datetime: ""
+        start_datetime: 2023-10-13T16:20+02:00
+        end_datetime: 2023-10-13T16:55+02:00
         speakers:
           speaker_1: *andreapanisson
       kubernetes-proactive-threat-detection-with-falco-and-prometheus-9:
@@ -330,83 +422,9 @@ days:
           avvisare gli admin in modo proattivo. Al termine della sessione avrete
           tutti gli spunti necessari per iniziare con la vostra implementazione."
         talk_video_url: ""
-        start_datetime: ""
-        end_datetime: ""
+        start_datetime: 2023-10-13T16:55+02:00
+        end_datetime: 2023-10-13T17:30+02:00
         speakers:
           speaker_1: *matteorenzi
-      spreading-sec-across-devops-loops-7:
-        item_type: talk
-        track: *track_1
-        talk_title: Spreading Sec across DevOps loops
-        talk_description: "Container, Platform Engineering, Internal Developer Platform sono i nuovi
-          \"Game Changer\" del DevOps: oltre a permettere un miglioramento della
-          velocità di onboarding di nuovi Team portano anche a un miglioramento
-          della stabilità e standardizzazione dei processi e delle risorse, con
-          conseguenze positive sulla sicurezza dei sistemi. Tuttavia, ancora oggi
-          alcune problematiche già note in passato rimangono irrisolte: la distanza
-          tra l'ambiente di sviluppo locale e l'ambiente di integrazione remoto è
-          tutt'ora un problema ricorrente. Controlli su codice, test di integrazione
-          e analisi delle vulnerabilità, ad esempio, sono attività sempre più
-          presenti nelle pipeline di integrazione, spesso però tralasciate durante
-          lo sviluppo locale. Avvicinare questi controlli e test allo sviluppatore
-          non solo riduce i tempi per ricevere feedback, con conseguenze positive
-          sui tempi di sviluppo, ma aiuta anche ad aumentare la consapevolezza degli
-          sviluppatori in merito agli aspetti critici del proprio software. Una
-          maggiore consapevolezza in questo ambito può portare a processi di
-          sviluppo più sicuri, efficienti ed efficaci. Affidare agli sviluppatori la
-          responsabilità di definire e gestire controlli di sicurezza e qualità
-          porta a un aumento del loro carico cognitivo, senza garantire un effettivo
-          miglioramento del ciclo DevOps: in questo talk vedremo come e con che
-          strumenti sia possibile fornire agli sviluppatori un modo per anticipare i
-          controlli di sicurezza, ridurre pratiche di sviluppo rischiose e aumentare
-          la consapevolezza sulla sicurezza del proprio codice."
-        talk_video_url: ""
-        start_datetime: ""
-        end_datetime: ""
-        speakers:
-          speaker_1: *giorgiarondinini
-      shift-left-e-security-as-code:-sicurezza-su-kubernetes-con-neuvector-8:
-        item_type: talk
-        track: *track_1
-        talk_title: "Shift Left e Security-as-Code: Sicurezza su Kubernetes con Neuvector"
-        talk_description: Nell’era del DevSecOps e delle tecnologie cloud-native, il paradigma
-          “shift-left” è emerso come un approccio vincente per le strategie di
-          cybersecurity. Questo “shift” enfatizza l’integrazione precoce delle
-          policies di sicurezza nel ciclo di sviluppo di una applicazione erogata su
-          Kubernetes. Centrale per questo approccio è la metodologia
-          Security-as-Code, che prevede l’applicazione di policies di sicurezza in
-          modo dichiarativo. Con questa metodologia le policies di sicurezza
-          diventano parte di una applicazione, così come qualsiasi altra risorsa
-          Kubernetes (deployment, services, …). Questo approccio consente ai team di
-          sviluppo di perfezionare le policies di sicurezza in ambienti meno critici
-          e applicare policies rigorose in produzione, minimizzando i rischi di
-          cybersecurity e assicurando una difesa robusta e scalabile per le
-          applicazioni containerizzate. Per illustrare il valore di queste
-          metodologie mostreremo una demo illustrando in che modo NeuVector e le sue
-          potenzialità possono rendere possibile un approccio solido alle tematiche
-          illustrate.
-        talk_video_url: ""
-        start_datetime: ""
-        end_datetime: ""
-        speakers:
-          speaker_1: *giuliotodini
-      supply-chain-attacks-and-the-future-of-software-delivery-1:
-        item_type: talk
-        track: *track_1
-        talk_title: Supply Chain Attacks and the future of Software Delivery
-        talk_description: "Gli attacchi alla supply chain sono in aumento e lo stesso ciclo di vita
-          dello sviluppo del software (SDLC) è diventato un vettore di attacchi. I
-          recenti attacchi a Log4J, SolarWinds, Kaseya e Codecov hanno evidenziato
-          le aree vulnerabili esposte nel SDLC.  In questo intervento discuteremo
-          della crescente minaccia di attacchi alla supply chain, di come le
-          organizzazioni possono adottare misure per proteggersi e una panoramica
-          sul futuro. Verranno trattati argomenti quali:  - Condurre valutazioni
-          periodiche della sicurezza dei fornitori di terze parti - Implementazione
-          di solidi controlli di sicurezza per lo sviluppo e la distribuzione del
-          software - Investire in strumenti e tecnologie che aiutino a identificare
-          e mitigare i rischi della catena di fornitura."
-        talk_video_url: ""
-        start_datetime: ""
-        end_datetime: ""
-        speakers:
-          speaker_1: *gianlucavarisco
+
+
