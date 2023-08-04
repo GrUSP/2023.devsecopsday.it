@@ -35,14 +35,22 @@ gold:
     site_url: "http://www.darumahq.com/"
 silver:
   sponsor1:
+    name: "Imola Informatica"
+    logo_filename: "imola-informatica.png"
+    site_url: "https://imolainformatica.it/"
+  sponsor2:
     name: "Sparkfabrik"
     logo_filename: "sparkfabrik.png"
     site_url: "https://www.sparkfabrik.com/it/"
-  sponsor2:
+  sponsor3:
     name: "Workwave"
     logo_filename: "workwave.svg"
     site_url: "http://www.workwave.com/"
 bronze:
+  sponsor1:
+    name: "Mia-Platform"
+    logo_filename: "miaplatform.svg"
+    site_url: "https://mia-platform.eu/"
   sponsor2:
     name: "stickermule"
     logo_filename: "stickermule.svg"
