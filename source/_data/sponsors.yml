@@ -25,6 +25,10 @@ diamond:
     site_url: "https://sighup.io/"
 platinum:
   sponsor1:
+    name: "Snyk"
+    logo_filename: "snyk.png"
+    site_url: "https://snyk.io/"
+  sponsor2:
     name: "SUSE"
     logo_filename: "suse.svg"
     site_url: "https://www.suse.com/"
